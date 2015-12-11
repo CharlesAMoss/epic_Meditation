@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="New Button"
+        android:id="@+id/button" />
+
+    <AnalogClock
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:id="@+id/analogClock"
+        android:layout_gravity="center_horizontal" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/textClock"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@android:dimen/notification_large_icon_width" />
+</LinearLayout>

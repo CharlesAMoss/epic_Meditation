@@ -12,10 +12,25 @@ import android.widget.EditText;
  * Created by charlesamoss on 12/11/15.
  */
 public class SetTime extends AppCompatActivity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set);
 
+        Button button = (Button) findViewById(R.id.mainSetTimeButton);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+
+                Intent intent = new Intent(SetTime.this, CountDown.class);
+                startActivity(intent);
+
+
+                Log.d("click", "hello setTime, this is the on click");
+            }
+        });
     }
 }
