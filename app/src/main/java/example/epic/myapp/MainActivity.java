@@ -4,9 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
+import android.view.View;git
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+      //  setSupportActionBar(myToolbar);
 
         Button button = (Button) findViewById(R.id.mainButton);
         final EditText editText = (EditText) findViewById(R.id.nameEditText);
@@ -23,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     Intent intent = new Intent(MainActivity.this, SetTime.class);
-                    startActivity(intent);
+                startActivity(intent);
 
 
                 Log.d("click","hello editText this is the on click");
